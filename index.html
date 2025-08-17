@@ -1,5 +1,95 @@
-<html>
-  <body>
-<h1> Welcome to Ani's portfolio </h2>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniruthan Jaganath | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    nav a {
+      color: #f5f5f5;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #aaa;
+    }
+    .section {
+      padding: 4rem 10%;
+      min-height: 100vh;
+      animation: fadeInUp 1s ease;
+    }
+    h2 {
+      border-bottom: 2px solid #444;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    .projects, .skills, .experience {
+      display: grid;
+      gap: 2rem;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    footer {
+      background: #000;
+      padding: 2rem;
+      text-align: center;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aniruthan Jaganath</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Page -->
+  <section class="section" id="home">
+    <h2>About Me</h2>
+    <p>I’m a high school student passionate about computer engineering, robotics, and building innovative projects like <b>EcoSort</b>. I’m working toward CMU and love coding, problem-solving, and helping others.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Aniruthan Jaganath | Portfolio</p>
+  </footer>
+</body>
 </html>
